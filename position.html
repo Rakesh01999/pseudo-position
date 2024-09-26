@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+    <style>
+        .box{
+            border: 2px dotted red;
+            width: 340px;
+        }
+        /*.dog{
+            position: relative;
+            left: 50px;
+            top: 30px;
+        }*/
+        /*.dog{
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }*/
+        .box-container{
+            position: relative;
+            border: 2px solid blue;
+        }
+        /*.dog{
+            position: sticky;
+            top: 0px;
+        }*/
+        .dog{
+            position: fixed;
+            top: 200px;
+            left: 490px;
+        }
+        .dummy{
+            border: 1px solid tomato;
+            width: 200px;
+            height: 200px;
+        }
+        .another{
+            border: 2px solid blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CSS Position</h3>
+    <ol>
+        <!-- flow related -->
+        <li>Static</li>
+        <li>Relative : Current position 
+            how much will change in relative and will not leave the current spot</li>
+        <li>Absolute <small>will lose it's own position and will move based on the root</small></li>
+        <!-- scroll related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    <div>
+        <div class="box-container">
+            <div class="box micky">
+                <img src="cartoons/micky.jfif" alt="">
+            </div>
+            <div class="box dog">
+                <img src="cartoons/dog.jfif" alt="">
+            </div>
+            <div class="box pengu">
+                <img src="cartoons/pengu.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+
+    </div>
+    <div class="another">
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+</body>
+</html>
